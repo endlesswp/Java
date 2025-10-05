@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "name": "Launch Extension",
+            "outFiles": [
+                "${workspaceFolder}/out/**/*.js"
+            ],
+            "preLaunchTask": "npm",
+            "request": "launch",
+            "type": "extensionHost"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.gudang.Main",
+            "modulePaths": [
+                "${workspaceFolder}/lib"
+            ],
+            "classPaths": [
+                "${workspaceFolder}/bin"
+            ],
+            "vmArgs": "--module-path ${workspaceFolder}/lib --add-modules javafx.controls,javafx.graphics"
+        }
+    ]
+}
