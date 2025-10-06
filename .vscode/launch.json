@@ -1,30 +1,45 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}"
-            ],
-            "name": "Launch Extension",
-            "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
-            ],
-            "preLaunchTask": "npm",
-            "request": "launch",
-            "type": "extensionHost"
-        },
-        {
-            "type": "java",
-            "name": "Launch Main",
-            "request": "launch",
-            "mainClass": "com.gudang.Main",
-            "modulePaths": [
-                "${workspaceFolder}/lib"
-            ],
-            "classPaths": [
-                "${workspaceFolder}/bin"
-            ],
-            "vmArgs": "--module-path ${workspaceFolder}/lib --add-modules javafx.controls,javafx.graphics"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.gudang.App",
+      "projectName": "Java_a1ccb1e5"
+    },
+    {
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "name": "Launch Extension",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "com.gudang.Main",
+      "modulePaths": [
+        "${workspaceFolder}/lib"
+      ],
+      "classPaths": [
+        "${workspaceFolder}/bin"
+      ],
+      "vmArgs": "--module-path ${workspaceFolder}/lib --add-modules javafx.controls,javafx.graphics"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/endlesswp/Documents/javakuiz/Java/bin/com/gudang/controller",
+      "program": "/Users/endlesswp/Documents/javakuiz/Java/bin/com/gudang/controller/build/Debug/outDebug"
+    }
+  ]
 }
